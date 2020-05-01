@@ -7,14 +7,14 @@ gem 'bson_ext'
 gem 'devise'
 gem 'simple_form'
 gem 'carrierwave'
-gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'mongoid', "4.0.0.rc2"
-gem 'mongo'
+gem 'carrierwave-mongoid', '>= 0.7.1'
+gem 'mongoid', '4.0.0'
+gem 'mongo', '>= 1.3.1'
 gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
 gem 'mongoid-slug', github: 'digitalplaywright/mongoid-slug'
 # gem 'ajax-datatables-rails', '0.1.2' #TODO --> ajaxify mongoid version
-gem "mongoid_paranoia"
-gem 'mongoid_taggable'
+gem "mongoid_paranoia", ">= 0.1.2"
+gem 'mongoid_taggable', '>= 1.1.1'
 gem 'active_model_serializers'
 gem "autoprefixer-rails"
 gem 'jquery-datatables-rails', '~> 3.1.1'
@@ -26,7 +26,7 @@ gem 'csv_shaper'
 gem 'rubyzip', '~> 0.9.9'
 gem 'georuby', github: 'nofxx/georuby'
 gem 'rgeo'
-gem 'mongoid-geospatial'
+gem 'mongoid-geospatial', '>= 4.0.0'
 gem 'rgeo-shapefile'
 gem 'sidekiq', '~> 3.2.6'
 gem 'sinatra', require: false
@@ -81,7 +81,7 @@ gem 'mailgun-ruby', '~>1.0.3', require: 'mailgun'
 gem 'sidetiq'
 
 group :development, :test do
-  gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
+  gem 'mongoid-rspec', '>= 1.10.0' #, '~> 2.0.0.rc1'
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem "launchy"
