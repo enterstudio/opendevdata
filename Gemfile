@@ -35,7 +35,7 @@ gem "redis"
 gem "foreman"
 gem 'faraday','~> 0.9'
 gem 'faraday-http-cache'
-gem "chartkick"
+gem "chartkick", ">= 3.4.0"
 gem 'lazy_high_charts'
 gem 'groupdate'
 gem 'kaminari'
