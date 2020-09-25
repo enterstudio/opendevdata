@@ -40,7 +40,7 @@ gem 'lazy_high_charts'
 gem 'groupdate'
 gem 'kaminari'
 gem 'cancan'
-gem 'gon'  # need rails variables in javascript
+gem 'gon'  , '>= 6.4.0' # need rails variables in javascript
 gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
