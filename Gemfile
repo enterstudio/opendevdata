@@ -92,7 +92,7 @@ group :production do
 end
 
 group :test do
-  gem "capybara"
+  gem "capybara", ">= 2.4.4"
   gem "selenium-webdriver"
   gem "database_cleaner", '1.0.1'
   gem 'email_spec'
