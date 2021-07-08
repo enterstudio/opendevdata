@@ -84,7 +84,7 @@ group :development, :test do
   gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
   gem "rspec-rails"
   gem "factory_girl_rails"
-  gem "launchy"
+  gem "launchy", ">= 2.4.3"
 end
 
 group :production do
@@ -95,7 +95,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "database_cleaner", '1.0.1'
-  gem 'email_spec'
+  gem 'email_spec', '>= 1.6.0'
   gem 'ffaker'
   # gem "shoulda-matchers"
 end
