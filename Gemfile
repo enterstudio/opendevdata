@@ -92,7 +92,7 @@ group :production do
 end
 
 group :test do
-  gem "capybara"
+  gem "capybara", ">= 2.4.4"
   gem "selenium-webdriver"
   gem "database_cleaner", '1.0.1'
   gem 'email_spec'
@@ -106,7 +106,7 @@ gem 'dalli'
 gem 'public_activity', '1.4.1'
 group :development do
   gem "binding_of_caller"
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'brakeman', :require => false
 end
 
