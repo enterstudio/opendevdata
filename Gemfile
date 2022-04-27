@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '5.2.7.1'
 
 gem 'bson_ext'
-gem 'devise'
-gem 'simple_form'
+gem 'devise', '>= 4.4.2'
+gem 'simple_form', '>= 4.0.0'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'mongoid', "4.0.0.rc2"
@@ -45,20 +45,20 @@ gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.5'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-rails', '~> 5.0.0'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'jquery-ui-rails', '~> 5.0.3'
 # gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -82,7 +82,7 @@ gem 'sidetiq'
 
 group :development, :test do
   gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 3.5.0"
   gem "factory_girl_rails"
   gem "launchy"
 end
@@ -117,7 +117,7 @@ gem 'unicorn'
 gem 'rabl'
 gem 'oj'
 gem 'wicked'
-gem 'devise-token_authenticatable'
+gem 'devise-token_authenticatable', '>= 1.0.1'
 gem 'pry-rails', :group => :development
 gem 'simple_enum', "~> 2.0.0", require: "simple_enum/mongoid"
 gem "recaptcha", :require => "recaptcha/rails"
