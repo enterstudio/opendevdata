@@ -29,7 +29,7 @@ gem 'rgeo'
 gem 'mongoid-geospatial'
 gem 'rgeo-shapefile'
 gem 'sidekiq', '~> 3.2.6'
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.2.0', require: false
 gem 'slim'
 gem "redis"
 gem "foreman"
