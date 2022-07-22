@@ -8,7 +8,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'mongoid', "4.0.0.rc2"
+gem 'mongoid', '4.0.0'
 gem 'mongo'
 gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
 gem 'mongoid-slug', github: 'digitalplaywright/mongoid-slug'
@@ -45,27 +45,27 @@ gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 4.0.5'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'jquery-ui-rails', '~> 5.0.0'
+gem 'jquery-ui-rails', '~> 5.0.3'
 # gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 gem 'figaro'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.2', '>= 2.2.12'
 gem 'spring', group: :development
 gem 'quiet_assets', group: :development
 group :doc do
@@ -119,5 +119,5 @@ gem 'oj'
 gem 'wicked'
 gem 'devise-token_authenticatable'
 gem 'pry-rails', :group => :development
-gem 'simple_enum', "~> 2.0.0", require: "simple_enum/mongoid"
+gem 'simple_enum', '~> 2.0.1', require: "simple_enum/mongoid"
 gem "recaptcha", :require => "recaptcha/rails"
