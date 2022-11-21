@@ -101,7 +101,7 @@ group :test do
 end
 
 gem 'cache_digests'
-gem 'dalli'
+gem 'dalli', '>= 3.2.3'
 
 gem 'public_activity', '1.4.1'
 group :development do
