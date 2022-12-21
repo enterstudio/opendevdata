@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.2.0'
 
 gem 'bson_ext'
 gem 'devise'
@@ -45,7 +45,7 @@ gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 6.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
