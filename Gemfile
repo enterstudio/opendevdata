@@ -28,7 +28,7 @@ gem 'georuby', github: 'nofxx/georuby'
 gem 'rgeo'
 gem 'mongoid-geospatial'
 gem 'rgeo-shapefile'
-gem 'sidekiq', '~> 3.2.6'
+gem 'sidekiq', '~> 7.1.3'
 gem 'sinatra', require: false
 gem 'slim'
 gem "redis"
@@ -78,7 +78,7 @@ gem 'google-api-client', '0.8.2', require: 'google/api_client'
 #mailgun
 gem 'mailgun-ruby', '~>1.0.3', require: 'mailgun'
 #scheduling tasks
-gem 'sidetiq'
+gem 'sidetiq', '>= 0.7.0'
 
 group :development, :test do
   gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
