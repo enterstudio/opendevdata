@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '7.0.8.1'
 
 gem 'bson_ext'
-gem 'devise'
-gem 'simple_form'
-gem 'carrierwave'
-gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'devise', '>= 4.7.0'
+gem 'simple_form', '>= 4.0.0'
+gem 'carrierwave', '>= 2.2.6'
+gem 'carrierwave-mongoid', '>= 1.3.0', :require => 'carrierwave/mongoid'
 gem 'mongoid', "4.0.0.rc2"
 gem 'mongo'
 gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
@@ -17,7 +17,7 @@ gem "mongoid_paranoia"
 gem 'mongoid_taggable'
 gem 'active_model_serializers'
 gem "autoprefixer-rails"
-gem 'jquery-datatables-rails', '~> 3.1.1'
+gem 'jquery-datatables-rails', '~> 3.2.0'
 gem 'iconv'
 gem "sanitizer"
 gem "mini_magick"
@@ -29,7 +29,7 @@ gem 'rgeo'
 gem 'mongoid-geospatial'
 gem 'rgeo-shapefile'
 gem 'sidekiq', '~> 3.2.6'
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.0.0', require: false
 gem 'slim'
 gem "redis"
 gem "foreman"
@@ -38,31 +38,31 @@ gem 'faraday-http-cache'
 gem "chartkick"
 gem 'lazy_high_charts'
 gem 'groupdate'
-gem 'kaminari'
+gem 'kaminari', '>= 0.17.0'
 gem 'cancan'
-gem 'gon'  # need rails variables in javascript
+gem 'gon'  , '>= 6.0.1' # need rails variables in javascript
 gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.8'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-rails', '~> 5.0.0'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'jquery-ui-rails', '~> 5.0.4'
 # gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.5.4'
 gem 'figaro'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -70,7 +70,7 @@ gem 'spring', group: :development
 gem 'quiet_assets', group: :development
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 
 #google analytics
@@ -82,8 +82,8 @@ gem 'sidetiq'
 
 group :development, :test do
   gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
-  gem "rspec-rails"
-  gem "factory_girl_rails"
+  gem "rspec-rails", ">= 3.5.0"
+  gem "factory_girl_rails", ">= 4.6.0"
   gem "launchy"
 end
 
@@ -92,7 +92,7 @@ group :production do
 end
 
 group :test do
-  gem "capybara"
+  gem "capybara", ">= 2.5.0"
   gem "selenium-webdriver"
   gem "database_cleaner", '1.0.1'
   gem 'email_spec'
@@ -103,21 +103,21 @@ end
 gem 'cache_digests'
 gem 'dalli'
 
-gem 'public_activity', '1.4.1'
+gem 'public_activity', '1.4.2'
 group :development do
   gem "binding_of_caller"
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.2.0'
   gem 'brakeman', :require => false
 end
 
 gem 'capistrano'
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
-gem 'unicorn'
+gem 'unicorn', '>= 4.9.0'
 
 gem 'rabl'
 gem 'oj'
-gem 'wicked'
-gem 'devise-token_authenticatable'
+gem 'wicked', '>= 1.2.1'
+gem 'devise-token_authenticatable', '>= 1.1.0'
 gem 'pry-rails', :group => :development
 gem 'simple_enum', "~> 2.0.0", require: "simple_enum/mongoid"
 gem "recaptcha", :require => "recaptcha/rails"
