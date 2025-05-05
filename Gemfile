@@ -37,7 +37,7 @@ gem 'faraday','~> 0.9'
 gem 'faraday-http-cache'
 gem "chartkick"
 gem 'lazy_high_charts'
-gem 'groupdate'
+gem 'groupdate', '>= 6.6.0'
 gem 'kaminari'
 gem 'cancan'
 gem 'gon'  # need rails variables in javascript
@@ -82,7 +82,7 @@ gem 'sidetiq'
 
 group :development, :test do
   gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.0"
   gem "factory_girl_rails"
   gem "launchy"
 end
