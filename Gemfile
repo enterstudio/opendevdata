@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '7.0.0'
 
 gem 'bson_ext'
 gem 'devise'
@@ -29,7 +29,7 @@ gem 'rgeo'
 gem 'mongoid-geospatial'
 gem 'rgeo-shapefile'
 gem 'sidekiq', '~> 3.2.6'
-gem 'sinatra', require: false
+gem 'sinatra', '>= 4.0.0', require: false
 gem 'slim'
 gem "redis"
 gem "foreman"
@@ -38,14 +38,14 @@ gem 'faraday-http-cache'
 gem "chartkick"
 gem 'lazy_high_charts'
 gem 'groupdate'
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'cancan'
 gem 'gon'  # need rails variables in javascript
 gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 6.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -62,7 +62,7 @@ gem 'jquery-ui-rails', '~> 5.0.0'
 # gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'figaro'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -112,11 +112,11 @@ end
 
 gem 'capistrano'
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
-gem 'unicorn'
+gem 'unicorn', '>= 5.1.0'
 
 gem 'rabl'
 gem 'oj'
-gem 'wicked'
+gem 'wicked', '>= 1.2.1'
 gem 'devise-token_authenticatable'
 gem 'pry-rails', :group => :development
 gem 'simple_enum', "~> 2.0.0", require: "simple_enum/mongoid"
