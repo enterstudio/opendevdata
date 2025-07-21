@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.1.9'
 
 gem 'bson_ext'
-gem 'devise'
+gem 'devise', '>= 3.5.1'
 gem 'simple_form'
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
@@ -17,7 +17,7 @@ gem "mongoid_paranoia"
 gem 'mongoid_taggable'
 gem 'active_model_serializers'
 gem "autoprefixer-rails"
-gem 'jquery-datatables-rails', '~> 3.1.1'
+gem 'jquery-datatables-rails', '~> 3.2.0'
 gem 'iconv'
 gem "sanitizer"
 gem "mini_magick"
@@ -32,7 +32,7 @@ gem 'sidekiq', '~> 3.2.6'
 gem 'sinatra', require: false
 gem 'slim'
 gem "redis"
-gem "foreman"
+gem "foreman", ">= 0.86.0"
 gem 'faraday','~> 0.9'
 gem 'faraday-http-cache'
 gem "chartkick"
@@ -45,25 +45,25 @@ gem "rolify", git: "git://github.com/EppO/rolify.git"
 gem 'truncate_html', github: 'miclovich/truncate_html'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
-gem 'jquery-ui-rails', '~> 5.0.0'
+gem 'jquery-rails', '>= 3.1.3'
+gem 'jquery-ui-rails', '~> 5.0.4'
 # gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-gem 'figaro'
+gem 'turbolinks', '>= 2.5.4'
+gem 'figaro', '>= 1.2.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'spring', group: :development
@@ -82,8 +82,8 @@ gem 'sidetiq'
 
 group :development, :test do
   gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
-  gem "rspec-rails"
-  gem "factory_girl_rails"
+  gem "rspec-rails", ">= 3.2.2"
+  gem "factory_girl_rails", ">= 4.6.0"
   gem "launchy"
 end
 
@@ -103,7 +103,7 @@ end
 gem 'cache_digests'
 gem 'dalli'
 
-gem 'public_activity', '1.4.1'
+gem 'public_activity', '1.4.2'
 group :development do
   gem "binding_of_caller"
   gem 'better_errors'
@@ -116,8 +116,8 @@ gem 'unicorn'
 
 gem 'rabl'
 gem 'oj'
-gem 'wicked'
-gem 'devise-token_authenticatable'
+gem 'wicked', '>= 1.2.1'
+gem 'devise-token_authenticatable', '>= 0.3.1'
 gem 'pry-rails', :group => :development
 gem 'simple_enum', "~> 2.0.0", require: "simple_enum/mongoid"
 gem "recaptcha", :require => "recaptcha/rails"
