@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '7.1.5.2'
 
 gem 'bson_ext'
 gem 'devise'
@@ -103,7 +103,7 @@ end
 gem 'cache_digests'
 gem 'dalli'
 
-gem 'public_activity', '1.4.1'
+gem 'public_activity', '1.4.2'
 group :development do
   gem "binding_of_caller"
   gem 'better_errors'
@@ -116,7 +116,7 @@ gem 'unicorn'
 
 gem 'rabl'
 gem 'oj'
-gem 'wicked'
+gem 'wicked', '>= 1.2.1'
 gem 'devise-token_authenticatable'
 gem 'pry-rails', :group => :development
 gem 'simple_enum', "~> 2.0.0", require: "simple_enum/mongoid"
