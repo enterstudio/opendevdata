@@ -7,13 +7,13 @@ gem 'bson_ext'
 gem 'devise'
 gem 'simple_form'
 gem 'carrierwave'
-gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'mongoid', "4.0.0.rc2"
+gem 'carrierwave-mongoid', '>= 1.1.0', :require => 'carrierwave/mongoid'
+gem 'mongoid', '7.6.1'
 gem 'mongo'
 gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
 gem 'mongoid-slug', github: 'digitalplaywright/mongoid-slug'
 # gem 'ajax-datatables-rails', '0.1.2' #TODO --> ajaxify mongoid version
-gem "mongoid_paranoia"
+gem "mongoid_paranoia", ">= 0.2.0"
 gem 'mongoid_taggable'
 gem 'active_model_serializers'
 gem "autoprefixer-rails"
@@ -26,15 +26,15 @@ gem 'csv_shaper'
 gem 'rubyzip', '~> 0.9.9'
 gem 'georuby', github: 'nofxx/georuby'
 gem 'rgeo'
-gem 'mongoid-geospatial'
+gem 'mongoid-geospatial', '>= 4.0.1'
 gem 'rgeo-shapefile'
 gem 'sidekiq', '~> 3.2.6'
 gem 'sinatra', require: false
 gem 'slim'
 gem "redis"
 gem "foreman"
-gem 'faraday','~> 0.9'
-gem 'faraday-http-cache'
+gem 'faraday', '~> 2.14', '>= 2.14.1'
+gem 'faraday-http-cache', '>= 2.2.0'
 gem "chartkick"
 gem 'lazy_high_charts'
 gem 'groupdate'
@@ -74,14 +74,14 @@ group :doc do
 end
 
 #google analytics
-gem 'google-api-client', '0.8.2', require: 'google/api_client'
+gem 'google-api-client', '0.9', require: 'google/api_client'
 #mailgun
 gem 'mailgun-ruby', '~>1.0.3', require: 'mailgun'
 #scheduling tasks
 gem 'sidetiq'
 
 group :development, :test do
-  gem 'mongoid-rspec'#, '~> 2.0.0.rc1'
+  gem 'mongoid-rspec', '>= 4.0.0' #, '~> 2.0.0.rc1'
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem "launchy"
